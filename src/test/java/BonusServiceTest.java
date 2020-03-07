@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BonusServiceTest {
 
     @Test
-    void ShouldCalculatedForRegisteredAndUnderLimit() {
+    void shouldCalculatedForRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 1000_60;
@@ -19,7 +19,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForRegisteredAndOverLimit() {
+    void shouldCalculatedForRegisteredAndOverLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 2_000_000_60;
@@ -31,7 +31,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForNonRegisteredAndOverLimit() {
+    void shouldCalculatedForNonRegisteredAndOverLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 10_000_000_00;
@@ -43,7 +43,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForNonRegisteredAndUnderLimit() {
+    void shouldCalculatedForNonRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 10_000_00;
@@ -55,7 +55,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForRegisteredAnd0() {
+    void shouldCalculatedForRegisteredAnd0() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 0;
@@ -67,7 +67,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForNonRegisteredAnd0() {
+    void shouldCalculatedForNonRegisteredAnd0() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 0;
@@ -79,7 +79,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForRegisteredAndNearUnderLimit() {
+    void shouldCalculatedForRegisteredAndNearUnderLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 16_633_34;
@@ -91,7 +91,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForRegisteredAndNearOverLimit() {
+    void shouldCalculatedForRegisteredAndNearOverLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 16_700_00;
@@ -103,7 +103,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForNonRegisteredAndNearUnderLimit() {
+    void shouldCalculatedForNonRegisteredAndNearUnderLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 49_900_00;
@@ -115,7 +115,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void ShouldCalculatedForNonRegisteredAndNearOverLimit() {
+    void shouldCalculatedForNonRegisteredAndNearOverLimit() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = 50_100_00;
@@ -128,7 +128,7 @@ class BonusServiceTest {
 
 
     @Test
-    void ShouldCalculatedForRegisteredAndNegativAmount() {
+    void shouldCalculatedForRegisteredAndNegativAmount() {
         BonusService service = new BonusService();
 // подготавливаем данные:
         long amount = - 1_000_00;
