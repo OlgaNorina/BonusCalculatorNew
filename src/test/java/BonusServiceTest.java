@@ -58,7 +58,7 @@ class BonusServiceTest {
     void ShouldCalculatedForRegisteredAnd0() {
         BonusService service = new BonusService();
 // подготавливаем данные:
-        long amount = 00000;
+        long amount = 0;
         boolean registered = false;
         long expected = 0;
 // вызываем целевой метод:
@@ -126,21 +126,6 @@ class BonusServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
-    void ShouldCalculatedForRegisteredAndMultiplicationLongAmount() {
-        BonusService service = new BonusService();
-
-/**Можем ли мы таким образом проверить большую сумму,
- * которая превышает допустимое значение для типа long?
- */
-
-        long amount = 9_999_999_99 * 9_999_999_99;
-        boolean registrated = true;
-        long expected = 500;
-// вызываем целевой метод:
-        long actual = service.calculate(amount, registrated);
-        assertEquals(expected, actual);
-    }
 
     @Test
     void ShouldCalculatedForRegisteredAndNegativAmount() {
